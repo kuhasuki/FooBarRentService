@@ -1,0 +1,9 @@
+<h1> All The Monkeys! </h1>
+
+<ul>
+  <% @monkeys.each do |monkey| %>
+  <li>
+    <a href="<%= monkey_url(monkey) %>"><%= monkey.name %></a>
+  </li>
+  <% end %>
+</ul>

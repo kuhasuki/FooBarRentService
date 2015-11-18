@@ -1,0 +1,70 @@
+
+<h1><%= @monkey.name %></h1>
+
+<table>
+  <tr>
+    <td>
+      Day of Birth:
+    </td>
+    <td>
+      Hue of Fur:
+    </td>
+    <td>
+      Type of Genitals:
+    </td>
+    <td>
+      Description of Monkey:
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <%= @monkey.birth_date %>
+    </td>
+    <td>
+      <%= @monkey.color %>
+    </td>
+    <td>
+      <%= @monkey.sex %>
+    </td>
+    <td>
+      <%= @monkey.description %>
+    </td>
+  </tr>
+</table>
+
+<h1>This monkey presently has <%= @requests.count %> request(s) to be rented.</h1>
+<% @requests.each do |request| %>
+  <p>Dates during which monkey rental is proposed to occur (respectively)</p>
+  <p><%= request.start_date %> to <%= request.end_date %></p>
+<% end %>
+<%= render "monkeys/rental_proposal" %>
+<!-- <table>
+  <tr>
+    <td>
+      Day of Birth:
+    </td>
+    <td>
+      Hue of Fur:
+    </td>
+    <td>
+      Type of Genitals:
+    </td>
+    <td>
+      Description of Monkey:
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <%= @monkey.birth_date %>
+    </td>
+    <td>
+      <%= @monkey.color %>
+    </td>
+    <td>
+      <%= @monkey.sex %>
+    </td>
+    <td>
+      <%= @monkey.description %>
+    </td>
+  </tr>
+</table> -->

@@ -1,0 +1,11 @@
+<form action="<%=monkey_monkey_rental_requests_url(@monkey)%>" method="POST">
+  <label>Date of proposed Monkey Acquisition:
+    <input type="date" name="monkey_rental_request[start_date]"/>
+  </label>
+  <br>
+  <label>Date of proposed Monkey Forfeiture:
+    <input type="date" name="monkey_rental_request[end_date]"/>
+  </label>
+  <br>
+  <input type="submit" value='SUBMIT PROPOSAL!'/>
+</form>
